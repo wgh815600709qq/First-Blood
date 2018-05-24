@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 // Map Redux state to component props
 function mapStateToProps(state) {
   return {
-    value: state.count
+    value: state.counterReducer.count
   }
 }
 

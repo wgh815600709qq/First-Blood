@@ -1,5 +1,8 @@
+#root{
+  height: 100%;
+}
 .App {
-  text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -25,4 +28,13 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+  display: inline-block;
 }

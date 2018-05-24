@@ -10,6 +10,8 @@ import About from '../page/about/about.jsx'
 import Detail from '../page/detail/detail.jsx'
 import NotFoundPage from '../page/error/error.jsx'
 import Counter from '../redux/Connect/counter.js'
+import Spin from '../redux/Connect/loading.js'
+import Caculator from '../component/Calculator/calculator.jsx'
 class RootRouters extends Component{
   render() {
     return (
@@ -21,9 +23,11 @@ class RootRouters extends Component{
               <Route path="/about" component={About} />
               <Route path="/detail" component={Detail} />
               <Route path="/count" component={Counter} />
+              <Route path="/calculator" component={Caculator} />
               <Route path='/404' component={NotFoundPage} /> {/* 404 */}
               <Redirect from='/*' to='/404' />
             </Switch>
+            <Spin></Spin>
           </App>
         </HashRouter>
       </Provider>
