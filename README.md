@@ -87,5 +87,5 @@ openBrowser(urls.localUrlForBrowser + '#/index'); // 修改打开地址
 
     1、全局state的loading来控制所有请求的loading效果
     2、axios代理请求的地址在package.json配置(开发环境)
-
+    3、父子组件通讯通过事件
 ```
