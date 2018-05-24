@@ -1,4 +1,4 @@
-# 在create-react-app脚手架基础上,集成react-router、redux、 less、 antd、utils等
+### 在create-react-app脚手架基础上,集成react-router、redux、 less、 antd、utils等
 
 ```
 + public // 静态资源
@@ -7,11 +7,11 @@
   ++ components // 组件
   ++ pages      // 页面视图
   ++ router     // 路由
-  ++ store      // 状态管理
+  ++ redux      // 状态管理
   ++ utils      // 工具函数
 ```
 
-## 一、集成less语法书写css
+#### 一、集成less语法书写css
 1、node-modules/react-scripts/config/webpack.config.dev.js内在css配置下添加
 ```
           // 支持less
@@ -53,17 +53,27 @@
 ```
 2、 在react-scripts文件下npm install less less-loader
 
-二、集成antd(ui组件库)
+#### 二、集成antd(ui组件库)
 
 ```
     按需引入
 ```
 
-三、集成react-router4.0+
+#### 三、集成react-router4.0+
 ```
 1、默认app为最外层
 2、添加404页面
 修改 react-scripts 内 scripts内的 start.js
 openBrowser(urls.localUrlForBrowser + '#/index'); // 修改打开地址
 3、默认根/为404；主页/index
+```
+
+#### 四、集成redux状态管理(目录结构)
+
+```
+ + redux
+  ++ Actions
+  ++ Connect
+  ++ Reduces
+  ++ Store
 ```
