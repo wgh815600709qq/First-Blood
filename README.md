@@ -1,6 +1,6 @@
 ##  master 分支react基础架构
 
-##  learn 分支基于master分支做的开发应用网页计算器
+##  learn 分支基于master分支做的开发应用网页计算器、百度定位
 
 ### 在create-react-app脚手架基础上,集成react-router、redux、 less、 antd、utils等
 
