@@ -1,3 +1,7 @@
+##  master 分支react基础架构
+
+##  learn 分支基于master分支做的开发应用网页计算器
+
 ### 在create-react-app脚手架基础上,集成react-router、redux、 less、 antd、utils等
 
 ```
@@ -78,8 +82,10 @@ openBrowser(urls.localUrlForBrowser + '#/index'); // 修改打开地址
   ++ Store
 ```
 
+### 五、细微的点
+```
 
+    1、全局state的loading来控制所有请求的loading效果
+    2、axios代理请求的地址在package.json配置(开发环境)
 
-###  master 分支基础架构
-
-###  learn 分支基于master分支做的开发应用[数据来源boss直聘]
+```

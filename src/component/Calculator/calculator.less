@@ -1,14 +1,29 @@
 .calculator-wrapper{
+    h2{
+        text-align: center;
+        margin:10px auto;
+    }
+    h3{
+        margin-left: 20px;
+        font-size: 14px;
+        color:#999;
+    }
     .tab{
+        margin: 10px auto;
+        text-align: center;
         span{
             display: inline-block;
             width:400px;
             text-align: center;
             cursor: pointer;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            margin: 0 10px;
         }
     }
     .hover{
         color:red;
+        background-color: lightblue;
         text-decoration: underline;
     }
     .onHands{
@@ -22,27 +37,37 @@
     button{
         margin:20px;
     }
+    h4{
+        margin-left:20px;
+    }
     .result{
         color: red;
-        margin-left: 20px;
+        position: absolute;
+        right: 330px;
+        top: 200px;
     }
     .board{
-        width: 250px;
+        width: 200px;
         padding:20px;
         span{
             display: inline-block;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             color:#333;
             text-align: center;
-            line-height: 50px;
+            line-height: 40px;
             cursor: pointer;
             border: 1px solid #eee;
+            border-radius: 4px;
+            &:hover{
+                color: #fff;
+                background-color: lightgreen;
+            }
         }
     }
     .showBoard{
         width: 400px;
-        height: 100px;
+        height: 50px;
         border: 1px solid #eee;
         border-radius: 4px;
         margin-left:20px;
