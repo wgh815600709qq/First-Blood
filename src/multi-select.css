@@ -1,0 +1,41 @@
+.items{
+    display: flex;
+    align-items: center;
+}
+.items .item{
+    margin: 10px;
+    width: 200px;
+    height: 34px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    position: relative;
+}
+.item select{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 10px;
+}
+select option{
+    font-family: 'Micsoft Yahei';
+}
+.item:after{
+    content: "";
+    /* width: 14px;
+    height: 8px; */
+    background: url(./board.svg) no-repeat center;
+    right: 10px; 
+    pointer-events: none;
+    background-position: 0 -24px;
+    height: 7px;
+    width: 17px;
+    position: absolute;
+    top: 50%;
+    margin-top: -3.5px;
+    margin-left: -8.5px;
+}
